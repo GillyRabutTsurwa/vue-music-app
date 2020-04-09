@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img class="vue-logo" alt="Vue logo" src="./assets/logo.png" /> -->
-    <!-- <header>
-      <h1>My Music</h1>
-    </header>-->
     <main class="main">
       <section class="player">
         <h1 class="app-title">Gilbert's Top {{songs.length}} Songs Playlist</h1>
@@ -146,14 +142,6 @@ export default {
 
 <style lang="scss">
 @import "./App.css";
-
-// .vue-logo {
-//   position: absolute;
-//   top: 1rem;
-//   left: 1rem;
-//   height: 3rem;
-// }
-
 button {
   background-color: #fff;
   &:focus {
