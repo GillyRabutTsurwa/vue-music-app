@@ -53,35 +53,30 @@ export default {
         {
           title: "Enchant",
           artist: "Ibrahim",
-          // NEW: HOW TO REQUIRE FILES. require()
           src: require("./assets/enchant.mp3"),
           albumCover: require("./assets/ibrahim.jpg")
         },
         {
           title: "Everyday",
           artist: "Unknown",
-          // NEW: HOW TO REQUIRE FILES. require()
           src: require("./assets/everyday-gunna-youngthug.mp3"),
           albumCover: require("./assets/everyday.jpg")
         },
         {
           title: "Foggy",
           artist: "Wun Two",
-          // NEW: HOW TO REQUIRE FILES. require()
           src: require("./assets/foggy.mp3"),
           albumCover: require("./assets/wuntwo.jpg")
         },
         {
           title: "The American Dream",
           artist: "18 Carat Affair",
-          // NEW: HOW TO REQUIRE FILES. require()
           src: require("./assets/the-american-dream.mp3"),
           albumCover: require("./assets/18carataffair.jpg")
         },
         {
           title: "home tomorrow",
           artist: "jhfly",
-          // NEW: HOW TO REQUIRE FILES. require()
           src: require("./assets/home-tomorrow.mp3"),
           albumCover: require("./assets/jhfly.jpg")
         }
