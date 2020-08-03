@@ -64,16 +64,16 @@ export default {
           albumCover: require("./assets/wuntwo.jpg")
         },
         {
-          title: "The American Dream",
-          artist: "18 Carat Affair",
-          src: require("./assets/the-american-dream.mp3"),
-          albumCover: require("./assets/18carataffair.jpg")
-        },
-        {
           title: "home tomorrow",
           artist: "jhfly",
           src: require("./assets/home-tomorrow.mp3"),
           albumCover: require("./assets/jhfly.jpg")
+        },
+        {
+          title: "The American Dream",
+          artist: "18 Carat Affair",
+          src: require("./assets/the-american-dream.mp3"),
+          albumCover: require("./assets/18carataffair.jpg")
         }
       ],
       player: new Audio()
@@ -104,17 +104,17 @@ export default {
       this.isPlaying = false;
     },
     prev() {
-      this.index++;
-      if (this.index > this.songs.length - 1) {
-        this.index = 0;
+      this.index--;
+      if (this.index < 0) {
+        this.index = this.songs.length - 1;
       }
       this.current = this.songs[this.index];
       this.play(this.current);
     },
     next() {
-      this.index--;
-      if (this.index < 0) {
-        this.index = this.songs.length - 1;
+      this.index++;
+      if (this.index > this.songs.length - 1) {
+        this.index = 0;
       }
       this.current = this.songs[this.index];
       this.play(this.current);
