@@ -19,12 +19,7 @@
         <div class="playlist">
           <h3 class="playlist__title">Click buttons below to select song</h3>
           <div class="playlist__buttons">
-            <button
-              v-for="(currentSong, index) in songs"
-              v-bind:key="index"
-              v-on:click="play(currentSong)"
-              v-bind:class="(currentSong.src == current.src) ? 'song playing' : 'song'"
-            >{{currentSong.title}}</button>
+            <button v-for="(currentSong, index) in songs" v-bind:key="index" v-on:click="play(currentSong)" v-bind:class="(currentSong.src == current.src) ? 'song playing' : 'song'">{{currentSong.title}}</button>
           </div>
         </div>
       </section>
